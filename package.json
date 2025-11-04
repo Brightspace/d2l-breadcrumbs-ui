@@ -3,14 +3,7 @@
   "version": "2.1.0",
   "description": "Mixins and CSS for applying breadcrumb styles",
   "scripts": {
-    "clean": "rimraf *.css",
-    "prebuild": "npm run clean && imgtoscss -p vui- -o breadcrumbs-icons.scss *.svg",
-    "build": "node-sass --output-style expanded breadcrumbs.css.scss breadcrumbs.css && cp breadcrumbs.css ./test",
-    "postinstall": "bower install",
-    "snapshot": "phantomjs ./screenshots/build.js",
-    "perceptual-diff": "percy snapshot test/",
-    "pretest": "npm run build",
-    "test": "csslint breadcrumbs.css"
+    "postinstall": "bower install"
   },
   "repository": {
     "type": "git",
@@ -28,13 +21,6 @@
   },
   "homepage": "https://github.com/Brightspace/d2l-breadcrumbs-ui",
   "dependencies": {
-    "bower": "^1.7.7"
-  },
-  "devDependencies": {
-    "csslint": "^0.10.0",
-    "images-to-variables": "^0.3.0",
-    "node-sass": "^3.4.2",
-    "phantomjs-prebuilt": "^2.1.4",
-    "rimraf": "^2.5.2"
+    "bower": "^1"
   }
 }
